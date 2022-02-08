@@ -1,9 +1,6 @@
 import { Controller } from "@nestjs/common";
-import { TrackService } from "./track.service";
 
-@Controller('/api')
+@Controller('/tracks')
 export class TrackController {
-
-  constructor(private appService: TrackService){}
 
 }
