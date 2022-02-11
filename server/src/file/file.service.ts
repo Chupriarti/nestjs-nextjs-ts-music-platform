@@ -1,13 +1,18 @@
 import { Injectable } from "@nestjs/common";
 
+export enum FileType {
+  AUDIO = 'audio',
+  IMAGE = 'image'
+}
+
 @Injectable()
 export class FileService {
 
-  createFile() {
-
+  createFile(type: FileType, file) {
+    
   }
 
-  removeFile() {
+  removeFile(fileName: string) {
 
   }
 }
