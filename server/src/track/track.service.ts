@@ -43,4 +43,10 @@ export class TrackService {
     return comment
   }
 
+  async listen(id: ObjectId) {
+    const track = await this.trackModel.findById(id)
+    track.listens += 1
+    track.save()
+  }
+
 }
